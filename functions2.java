@@ -17,6 +17,21 @@ public class Main
         myPower(2.129783);
         myPower();
         // myPower (4 parameters ) ==> print: a ^ b print: c ^ d
+        // myAdd (int a, int b) prints a+b
+        // myAdd (int a) prints a
+        // myAdd () prints 0
+        // write functions:
+        // *etgar: function myCalc(String s, int a, int b)
+        //  use switch-case: 
+        // if s is "+" print (a+b)
+        // if s is "-" print (a-b)
+        // if s is "*" print (a*b)
+        // if s is "/" print (a/b)
+        // **etgar: function that gets (int a, int b) --> calls myCalc with "+" in s
+        // *etgar: function that gets (int[] a) 
+        // and puts random number in array
+        // *etgar: function that gets (int[] a) 
+        // and prints the array
     }
     private static void myPower(double a, double b) { // overloading
         System.out.println(String.format("%f ^ %f = %f", a, b, Math.pow(a,b)));
