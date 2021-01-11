@@ -33,13 +33,28 @@ public class Main
         System.out.println("Please enter a 2nd number:");
         int number2 = s.nextInt();
         //System.out.println(number1 + number2);
-        sum2Numbers(5, 10);
+        //sum2Numbers(5, 10);
         sum2Numbers(number1, number2);
-        // create function for minus/mul/div
-        // *etgar in div -- check that num2 is not zero -- if so, do not divide
+        diff2Numbers(number1, number2);
+        mul2Numbers(number1, number2);
+        div2Numbers(number1, number2);
+
     }
     private static void sum2Numbers(int num1, int num2) {
-        System.out.println(num1 + num2);
+        System.out.println(String.format("%d + %d = %d", num1, num2, num1+num2));
     }
-
+    private static void diff2Numbers(int num1, int num2) {
+        System.out.println(String.format("%d - %d = %d", num1, num2, num1-num2));
+    }
+    private static void mul2Numbers(int num1, int num2) {
+        System.out.println(String.format("%d * %d = %d", num1, num2, num1*num2));
+    }
+    private static void div2Numbers(int num1, int num2) {
+        if (num2 == 0) {
+            System.out.println("Cannot divide by zero!");
+        }
+        else {
+            System.out.println(String.format("%d / %d = %f", num1, num2, (float) num1 / num2));
+        }
+    }
 }
