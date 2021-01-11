@@ -28,8 +28,12 @@ public class Main
         getNumberFromUser(s, "Please enter number:");
         getNumberFromUser(s, "Please enter grade:");
         getNumberFromUser(s, "Please enter your year of birth:");
-        
+
         getAndPrintRandomNumber(r);
+        
+        // create a function that gets an array of int[] and prints the average
+        // create a function that gets an array of String[] and prints it in one line
+        // create a function that gets 2 arrays and prints the array with the larger size 
     }
     private static void getNumberFromUser(Scanner s, String message)
     {
